@@ -1,0 +1,56 @@
+@import "./fonts.css";
+@import "./reset.css";
+/*unique*/
+.container {
+  max-width: 1220PX;
+  padding: 0 10PX;
+  margin: 0 auto;
+}
+
+/*unique*/
+.hero {
+  position: relative;
+  height: 650px;
+  background: url(../images/bg_white.jpg) no-repeat right;
+  background-size: 95%;
+  background-position-y: -121px;
+}
+.hero::before {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  background: linear-gradient(90deg, #FFFFFF 20%, rgba(255, 255, 255, 0) 86.67%);
+}
+.hero__top {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  justify-content: space-between;
+}
+.hero__logo {
+  display: flex;
+  align-items: flex-end;
+}
+.hero__def {
+  width: 220px;
+  margin-left: 8px;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 16px;
+  color: #593F0D;
+}
+.hero__contacts {
+  display: flex;
+  align-items: center;
+}
+.hero__sm-desc {
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 18px;
+  text-align: center;
+  color: #593F0D;
+  max-width: 136px;
+}/*# sourceMappingURL=Style.css.map */
